@@ -1,0 +1,20 @@
+.header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding: 30px 0;
+    grid-gap: 30px;
+
+    @include tablet {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+.header__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
