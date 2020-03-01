@@ -3,61 +3,14 @@
     margin: 0;
     padding: 60px;
 
+    @include tablet {
+        padding: 40px;
+    }
+
     &__inner {
         width: 100%;
         max-width: 1440px;
         margin: 0 auto;
-    }
-}
-
-.navigation {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    margin-top: 40px;
-
-    li {
-        display: block;
-        margin-bottom: 5px;
-        &::after {
-            content: '';
-            width: 1.3rem;
-            display: block;
-            height: 2px;
-            background: $color--black;
-        }
-
-        &:last-child::after{
-            display: none;
-        }
-    }
-
-    a {
-        display: block;
-        padding: 1em 0;
-        font-family: $sans;
-        text-transform: uppercase;
-        font-size: 12px;
-        letter-spacing: 1.4px;
-        color: inherit;   
-        transition: 0.2s;
-
-        span {
-            display: inline;
-            padding: .5em 0 0;
-            opacity: .3;
-            letter-spacing: normal;
-            font-family: $sans;
-            text-transform: none;
-        }
-
-        &:hover {
-            color: $color-primary;
-            span {
-                opacity: 1;
-                color: $color--black;
-            }
-        }
     }
 }
 
