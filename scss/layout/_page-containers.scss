@@ -21,10 +21,14 @@
     }
 
     &.is-intro {
-        min-height: calc(var(--vh, 1vh) * 100);
+        min-height: auto;
         display: flex;
         align-items: center;
         padding-top: 40px;
         padding-bottom: 40px;
+
+        @include tablet {
+            min-height: calc(var(--vh, 1vh) * 100);
+        }
     }
 }
