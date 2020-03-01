@@ -1,10 +1,10 @@
 .container {
     width: auto;
     margin: 0;
-    padding: 60px;
+    padding: 0 40px;
 
     @include tablet {
-        padding: 40px;
+        padding: 0 60px;
     }
 
     &__inner {
@@ -12,12 +12,23 @@
         max-width: 1440px;
         margin: 0 auto;
     }
+
+    &.is-yellow {
+        background: $color-primary;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+    }
 }
 
 h1 {
-    color: $color--black;
+    color: $color-black;
     font-family: $sans;
-    font-size: 60px;
+    font-size: 40px;
     font-weight: normal;
     line-height: 1.5;
+
+    @include tablet {
+        font-size: 60px;
+    }
 }
