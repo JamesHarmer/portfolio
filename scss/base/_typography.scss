@@ -2,28 +2,54 @@ h1 {
     color: $color-black;
     font-family: $sans;
     font-size: 40px;
-    font-weight: normal;
+    font-weight: bold;
     line-height: 1.5;
+    margin-bottom: 10px;
 
     @include tablet {
         font-size: 60px;
     }
 }
 
+h2 {
+    color: $color-black;
+    font-family: $sans;
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 1.5;
+    margin-bottom: 10px;
+
+    @include tablet {
+        font-size: 35px;
+    }
+}
+
+h3 {
+    color: $color-black;
+    font-family: $sans;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.5;
+    margin-bottom: 25px;
+
+    @include tablet {
+        font-size: 22px;
+    }
+}
+
 p {
     color: $color-black;
     font-family: $sans;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: normal;
     line-height: 1.75;
     margin-bottom: 12px;
 
     @include tablet {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     &.is-title {
-        font-family: $sans;
         opacity: 0.6;
     }
 }
