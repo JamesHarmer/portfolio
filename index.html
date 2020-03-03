@@ -8,8 +8,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">  <link rel = "stylesheet" type = "text/css" href = "css/main.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <link rel = "stylesheet" type = "text/css" href = "css/main.css" />
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
 </head>
 <body>
 
@@ -27,10 +32,10 @@
             <div>
                 <h1>Hi I'm James</h1>
                 <h3>I am a UI & Web Designer</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vulputate massa quam, ut malesuada dui mollis a. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                <p>I have been working as a designer since 2014, starting out as an apprentice, I learned my trade working for a small agency, gaining experience and a qualification in Graphic Design. Over the last 6 years I have progressed and honed my skills to specialise in UI & Web Design.</p>
             </div>
             <div class="flex-center">
-                <img src="https://picsum.photos/350/350" width="100%" height="auto" />
+                <img src="https://picsum.photos/550/550" width="100%" height="auto" />
             </div>
         </div>
     </div>
@@ -39,7 +44,7 @@
     <div class="container__inner">
         <div class="section-home">
             <div class="flex-center">
-                <img src="https://picsum.photos/350/350" width="100%" height="auto" />
+                <img src="https://picsum.photos/650/650" width="100%" height="auto" />
             </div>
             <div>
                 <h2>About me</h2>
@@ -60,22 +65,22 @@
                         <p>Web Design</p>
                     </div>
                     <div>
-                        <p>85%</p>
+                        <p>95%</p>
                     </div>
                 </div>
                 <div class="slider">
-                    <div class="level is-85"></div>
+                    <div class="level is-95"></div>
                 </div>
                 <div class="experience">
                     <div>
                         <p>HTML/CSS</p>
                     </div>
                     <div>
-                        <p>95%</p>
+                        <p>85%</p>
                     </div>
                 </div>
                 <div class="slider">
-                    <div class="level is-95"></div>
+                    <div class="level is-85"></div>
                 </div>
                 <div class="experience">
                     <div>
@@ -99,7 +104,30 @@
 </div>
 <div class="container is-portfolio" id="portfolio">
     <div class="container__inner">
-        <p class="is-title">#3 Latest projects</p>
+        <h2 class="push-bottom">My latest projects</h2>
+        <div class="carousel">
+            <div id="owl-carousel" class="owl-carousel owl-theme">
+              <div class="item">
+                1
+              </div>
+              <div class="item">
+                2
+              </div>
+              <div class="item">
+                3
+              </div>
+              <div class="item">
+                4
+              </div>
+              <div class="item">
+                5
+              </div>
+              <div class="item">
+                6
+              </div>
+            </div>
+          </div>
+
     </div>
 </div>
 <div class="container is-contact" id="contact">
@@ -107,6 +135,31 @@
         <p class="is-title">#4 Get in touch</p>
     </div>
 </div>
+
+<script>
+    $('#owl-carousel').owlCarousel({
+    loop: true,
+    margin: 30,
+    dots: true,
+    nav: false,
+    items: 3,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        768:{
+            items:2,
+            nav:false
+        },
+        1000:{
+            items:3,
+            nav:true,
+            loop:false
+        }
+    }
+})
+</script>
 
 </body>
 </html>
