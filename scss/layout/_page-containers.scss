@@ -54,10 +54,14 @@
 
 .section-home {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-gap: $padding-mobile;
     align-items: center;
+
+    @include tablet {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 .nav {
