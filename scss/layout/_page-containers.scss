@@ -46,12 +46,12 @@
         background: lighten($color-black, 85%);
         display: flex;
         align-items: center;
-        text-align: center;
     }
 
     &.is-contact {
-        min-height: calc(var(--vh, 1vh) * 100);
         background: $color-primary;
+        display: flex;
+        align-items: center;
     }
 }
 
@@ -120,4 +120,35 @@
 .experience {
     display: flex;
     justify-content: space-between;
+}
+
+.social-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.social-inner {
+    display: flex;
+    width: 100%;
+    max-width: 300px;
+    justify-content: space-between;
+}
+
+.social-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 45px;
+    background: $color-black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+    svg {
+        fill: #ffffff;
+        width: 20px;
+        height: 20px;
+    }
 }
