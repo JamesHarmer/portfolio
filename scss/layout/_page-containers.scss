@@ -25,7 +25,8 @@
     }
 
     &.is-home {
-        background:$color-primary;
+        background: $color-primary;
+        background: linear-gradient(45deg, $color-primary 0%, $color-secondary 100%);
         min-height: calc(var(--vh, 1vh) * 100);
         display: flex;
         align-items: center;
@@ -147,7 +148,7 @@
     width: 45px;
     height: 45px;
     border-radius: 45px;
-    background: $color-black;
+    background: $color-secondary;
     color: white;
     display: flex;
     justify-content: center;
@@ -155,7 +156,7 @@
     text-decoration: none;
 
     svg {
-        fill: #ffffff;
+        fill: $color-white;
         width: 20px;
         height: 20px;
     }
