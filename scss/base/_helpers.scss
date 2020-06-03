@@ -1,9 +1,21 @@
 .push-bottom {
     margin-bottom: $padding-mobile;
+
+    &_half {
+        margin-bottom: 0.5*$padding-mobile;
+    }
+}
+
+.hard-bottom {
+    margin-bottom: 0;
 }
 
 .is-white {
     color: $color-white;
+}
+
+.is-primary {
+    color: $color-primary;
 }
 
 .is-secondary {
