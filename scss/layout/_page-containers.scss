@@ -69,6 +69,19 @@
     }
 }
 
+.section-skills {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: $padding-mobile;
+    align-items: flex-start;
+
+    @include tablet {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2*$padding-desktop;
+    }
+}
+
 .nav {
     width: 100%;
     position: absolute;
@@ -86,9 +99,9 @@
 
 .slider {
     width: 100%;
-    height: 5px;
+    height: 8px;
     background: lighten($color-black, 85%);
-    border-radius: 5px;
+    border-radius: 8px;
     margin-bottom: 15px;
 
     &:last-of-type {
@@ -98,8 +111,8 @@
 
 .level {
     background: $color-primary;
-    height: 5px;
-    border-radius: 5px;
+    height: 8px;
+    border-radius: 8px;
 
     &.is-75 {
         width: 75%;
@@ -144,7 +157,7 @@
     justify-content: space-between;
 
     @include tablet {
-        max-width: 300px;
+        max-width: 200px;
     }
 }
 
