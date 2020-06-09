@@ -50,4 +50,15 @@
         padding-right: 10px;
     }
 }
+
+.arrow {
+    position: relative;
+    width: 30px;
+    margin: 0 auto;
+
+    svg {
+        width: 30px;
+        height: auto;
+    }
+}
   
